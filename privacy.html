@@ -23,7 +23,7 @@
     <div class="meta">
       App: <strong>Flash Beacon</strong><br/>
       Developer: <strong>Lighthouse Studios</strong><br/>
-      Effective date: <strong>2026-04-08</strong>
+      Effective date: <strong>2026-05-13</strong>
     </div>
 
     <p>
@@ -34,9 +34,10 @@
     <div class="box">
       <strong>Short version:</strong>
       <ul>
-        <li>No account or sign-in is required to use Flash Beacon.</li>
+        <li>No traditional account registration is required to use Flash Beacon.</li>
         <li>The App uses camera and location permissions to support the AR HUD and related session features.</li>
         <li>The App uses temporary session data stored in Firebase / Cloud Firestore so paired users can connect and locate each other during a session.</li>
+        <li>Firebase anonymous authentication or similar temporary service identifiers may be used to operate, secure, update, and distinguish session participants.</li>
         <li>Payments are handled by Apple. We use RevenueCat to manage purchase entitlements and restore purchases.</li>
         <li>We do not run ads, do not use IDFA, and do not track you across apps or websites for advertising.</li>
       </ul>
@@ -78,9 +79,9 @@
     </p>
     <ul>
       <li><strong>Session code</strong> and session status information.</li>
-      <li><strong>Anonymous app-generated identifiers</strong> for session participants.</li>
+      <li><strong>Temporary participant identifiers</strong> such as anonymous app-generated identifiers, Firebase anonymous authentication identifiers, or similar service-level identifiers used to operate and secure a session.</li>
       <li><strong>Display names</strong> entered for session use.</li>
-      <li><strong>Session timestamps</strong> such as creation and expiration times.</li>
+      <li><strong>Session timestamps</strong> such as creation, update, and expiration times.</li>
       <li><strong>Location-related session values</strong> used to estimate direction and distance between paired users.</li>
       <li><strong>In-session visual settings</strong> such as selected pin color or similar session-display information, where applicable.</li>
     </ul>
@@ -99,12 +100,12 @@
 
     <h3>2.5 Technical information</h3>
     <p>
-      We and our service providers may process limited technical information needed to operate the App, such as app version, device/OS information, basic network or request metadata, and limited diagnostics related to app functionality, purchases, or service reliability.
+      We and our service providers may process limited technical information needed to operate the App, such as app version, device/OS information, basic network or request metadata, and limited diagnostics related to app functionality, purchases, session reliability, abuse prevention, or service reliability.
     </p>
 
     <h3>2.6 What we do not currently use for this version of the App</h3>
     <ul>
-      <li>No account registration or permanent user profile is required.</li>
+      <li>No traditional account registration or permanent user profile is required.</li>
       <li>No advertising tracking and no IDFA-based targeted advertising.</li>
       <li>No contact list access.</li>
       <li>No microphone access.</li>
@@ -115,9 +116,9 @@
     <p>We use the information above to:</p>
     <ul>
       <li><strong>Provide core functionality</strong> such as pairing users, creating/joining sessions, showing the AR HUD, and estimating direction and distance.</li>
-      <li><strong>Support temporary session operation</strong> while a session is active.</li>
+      <li><strong>Support temporary session operation</strong> while a session is active, including distinguishing host and guest participants and maintaining session updates.</li>
       <li><strong>Unlock and restore purchases</strong> and maintain subscription or in-app purchase entitlements.</li>
-      <li><strong>Improve reliability and security</strong> and prevent misuse or abuse of the App.</li>
+      <li><strong>Improve reliability and security</strong> and prevent misuse, abuse, unauthorized session access, or service disruption.</li>
       <li><strong>Respond to support requests</strong> and investigate app or purchase-related issues.</li>
       <li><strong>Comply with legal obligations</strong> where applicable.</li>
     </ul>
@@ -128,7 +129,7 @@
     </p>
     <ul>
       <li>
-        <strong>Google Firebase / Cloud Firestore</strong> — used to store and process temporary session data required for pairing and session functionality.
+        <strong>Google Firebase / Cloud Firestore / related Firebase services</strong> — used to store and process temporary session data required for pairing, session functionality, and session security, and may include anonymous authentication or service-level identifiers.
       </li>
       <li>
         <strong>RevenueCat, Inc.</strong> — used to manage in-app purchase and subscription entitlements, validate purchase status, and support restore purchases.
@@ -150,7 +151,7 @@
     </p>
     <ul>
       <li><strong>Contract</strong> — to provide the App’s requested functionality, including sessions, purchases, and restore functions.</li>
-      <li><strong>Legitimate interests</strong> — to maintain app security, reliability, abuse prevention, and support.</li>
+      <li><strong>Legitimate interests</strong> — to maintain app security, reliability, abuse prevention, session integrity, and support.</li>
       <li><strong>Consent</strong> — where device permissions such as camera or location access are requested by the App and granted by you.</li>
       <li><strong>Legal obligation</strong> — where processing is required by applicable law.</li>
     </ul>
@@ -160,7 +161,7 @@
       We retain information only as long as necessary for the purposes described in this Policy.
     </p>
     <ul>
-      <li><strong>Temporary session data</strong> is intended to be short-lived and may be removed when a session is cancelled, when it expires, or through backend cleanup processes.</li>
+      <li><strong>Temporary session data</strong> is intended to be short-lived and is typically retained only until a session is cancelled, expires, or is removed through routine backend cleanup processes.</li>
       <li><strong>Purchase and entitlement records</strong> may be retained as needed to support restore purchases, fraud prevention, accounting, and compliance.</li>
       <li><strong>Support communications</strong> may be retained as needed to resolve your request and maintain reasonable business records.</li>
     </ul>
@@ -179,7 +180,7 @@
     </ul>
     <p>
       Depending on your location, you may also have rights to request access, correction, deletion, or objection to certain processing of your information.
-      Because the App does not require a traditional account, we may need enough context to identify the relevant records.
+      Because the App does not require a traditional account, we may need enough context to identify the relevant records, such as session details, approximate dates, support correspondence, or other information you provide to help us locate relevant data.
       To exercise privacy rights, contact us at <a href="mailto:support@lighthousestudios.app">support@lighthousestudios.app</a>.
     </p>
     <p>
